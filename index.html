@@ -24,12 +24,35 @@
 			background-color: white;
 		}
 		#break {
-			border: none;
+			border: none:
 			background-color: white;
+		}
+		.btn {
+		  background-color: white;
+			border: black;
+		  color: white;
+		  font-size: 10px;
+		  cursor: pointer;
+			position: fixed;
+			z-index: 999;
+			display: inline-block;
+			text-decoration: none !important;
+		}
+		.btn:hover {
+		  background-color: #69696921;
+		}
+		header {
+			position: fixed;
+			padding-left: 15px;
+			padding-top: 15px;
+			z-index: 999;
 		}
 		</style>
 	</head>
 
+	<header>
+				<a href="#home1" class="btn button big smooth-scroll-middle">Home</a>
+	</header>
 
 
 	<body>
@@ -43,7 +66,7 @@
 						<div class="content">
 							<h2>Griffin McKnight</h2>
 							<p class="major">Data Analytics Learner | NEW Apprenticeship</p>
-								<section><div id="home"></div><section>
+								<section><div id="home1"></div><section>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">About Me</a></li>
 								<li><a href="#second" class="button big wide smooth-scroll-middle">Resume | CL</a></li>
@@ -73,9 +96,6 @@
 							<section><div id="first"></div><section>
 							<p>In April 2022, I was honorably discharged from the Marine Corps where I served as a Small Arms Repair Technician, or armorer, at MARSOC. In the Armory, my primary roles dealt with battallion level oversight of the maintenance performed by our armorers. A pretty common day in the armory would be spent analyzing preventative maintenance reports, collaborating with company armorers to ensure proper capture of inspections data, and reading the daily maintenance production report to see the current statuses of items inducted for repair. I am excited about the next chapter of my life, and I hope it goes by much slower than my 4 years in the Marines.</p>
 							<p>I plan to soon enter the IT field as a Data Analyst, putting together my skills of Python, SQL, and Tableau together to better understand problems that stakeholders may have. I am fueled by my curiosity for finding the optimal solution to problems. I desire to find the best solution for the stakeholder by uncovering the why’s and how’s of their data.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Home</a></li>
-							</ul>
 						</div>
 					</section>
 
@@ -129,12 +149,8 @@
 								<li>Git</li>
 								<li>Linux command line</li>
 							</ul>
-
-							<ul class="actions stacked">
-								<h3><a href="https://docs.google.com/document/d/1hTQ41feuGyg_wAEKk_7jTgB4RnzxF5RBv7XuBqBzf4Y/edit?usp=sharing"
-									target="_blank">View Infosys Cover Letter</a></h3>
-								<li><a href="#" class="button"><span class="label">Home</span></a></li>
-							</ul>
+							<h3>Go to: <a href="https://docs.google.com/document/d/1hTQ41feuGyg_wAEKk_7jTgB4RnzxF5RBv7XuBqBzf4Y/edit?usp=sharing"
+								target="_blank">Infosys Cover Letter</a></h3>
 						</div>
 					</section>
 
@@ -221,10 +237,9 @@
 					<section class="wrapper style1 align-center"   style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed" opacity:.1>
 						<div id="pdiv" class="inner">
 							<h2>Projects</h2>
-							<section><div id="projects"></div><section>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
-									<video width="300px" height="225px" src="images/SQLsh.mp4" type=video/mp4 controls>
+									<video id="projects" width="300px" height="225px" src="images/SQLsh.mp4" type=video/mp4 controls>
 									Your browser does not support the video tag.
 									</video>
 									<span>Using Oracle Live SQL to answer 3 business questions about a sales history database.</span>
@@ -249,8 +264,7 @@
 							<li><a href="https://docs.google.com/document/d/1e99ejfy-WksrVbQWJCDPDfKjGrydTk-1ZKuExrpuQgc/edit?usp=sharing" target="_blank">Data Analysts: An in-depth examination</a></li>
 							<li><a href="https://docs.google.com/document/d/1rB74XycbUnT_frLhY3TtOs2qheAv7AxnMWvX6bkva2A/edit?usp=sharing" target="_blank">Article Review: How 2D Semiconductors Could Extend Moore's Law</a></li>
 							<p></p>
-							<span>Energy</span>
-							<section><div id="papers"></div><section>
+							<span id="papers">Energy</span>
 							<li><a href="https://docs.google.com/document/d/1PQF5VvbXvOcQ8PJYwhUJllhdZp9YIKPK7oGlIRwrFyA/edit?usp=sharing" target="_blank">Energy Monitoring Report</a></li>
 							<li><a href="https://docs.google.com/document/d/1ggINtFEkLlP4fS-hbJuRIX3RbG7v9hep8YmKZQflW9I/edit?usp=sharing" target="_blank">Historical and Modern Advancements of Hydroelectric Power</a></li>
 							<p></p>
@@ -259,10 +273,6 @@
 							<li><a href="https://docs.google.com/document/d/1RN4Sr4n-EDiMcG0-oEROqFvJGjwcAOPy4oxNK7jED4w/edit?usp=sharing" target="_blank">Exploration of Psilocybin Mushroom Classification</a></li>
 							<li><a href="https://docs.google.com/document/d/1OueHkX9vhIgFh74dJ4xLcWjvCLol3RpbeXN70uOjl9g/edit?usp=sharing" target="_blank">Wealth Does Not Equal Health</a></li>
 							<p></p>
-
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Home</a></li>
-							</ul>
 						</div>
 					</section>
 
@@ -294,7 +304,7 @@
 								</div>
 								<ul class="actions special">
 									<li><input type="submit" name="submit" id="submit" value="Send" /></li>
-									<li><a href="#" class="button"><span class="label">Home</span></a></li>
+									<li><a href="#home1" class="button"><span class="label">Home</span></a></li>
 								</ul>
 							</form>
 
