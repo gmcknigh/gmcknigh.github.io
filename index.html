@@ -11,6 +11,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		#pdiv {
+			border: none;
+			background-color: white;
+			padding-top: 50px;
+			padding-right: 50px;
+			padding-bottom: 50px;
+			padding-left: 50px;
+		}
+		#cdiv {
+			background-color: white;
+		}
+		#break {
+			border: none:
+			background-color: white;
+		}
+		</style>
 	</head>
 
 
@@ -22,7 +39,7 @@
 
 
 				<!-- Home -->
-					<section class="banner style3 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"  style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed" opacity:.1>
+					<section class="banner style3 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"  style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed">
 						<div class="content">
 							<h2>Griffin McKnight</h2>
 							<p class="major">Data Analytics Learner | NEW Apprenticeship</p>
@@ -30,7 +47,7 @@
 							<ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">About Me</a></li>
 								<li><a href="#second" class="button big wide smooth-scroll-middle">Resume | CL</a></li>
-								<li><a href="#certs" class="button big wide smooth-scroll-middle">Certifications</a></li>
+								<li><a href="#certs" target="_blank" class="button big wide smooth-scroll-middle">Certifications</a></li>
 								<li><a href="#projects" class="button big wide smooth-scroll-middle">Projects</a></li>
 								<li><a href="#papers" class="button big wide smooth-scroll-middle">Papers</a></li>
 
@@ -48,10 +65,10 @@
 					</section>
 
 				<!-- About Me -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed" opacity:.1>
+						<div id="pdiv" class="content">
 							<h2>About Me</h2>
-							<p>Residing in Durham, North Carolina, I enjoy spending time with family and friends, as well as doing all things outdoors. My hobbies include, hiking, camping, shooting and building guns, and learning survival skills. My interests are many, but if you logged into my YouTube, you would find videos on bushcraft, cooking, mathematics, homesteading, farming, pizza reviews, knot tying, and much much more.</p>
+							<p>Residing in Durham, North Carolina, I enjoy spending time with family and friends, as well as doing all things outdoors! My hobbies include, hiking, camping, shooting and building guns, and learning survival skills. My interests are many, but if you logged into my YouTube, you would find videos on bushcraft, cooking, mathematics, homesteading, farming, pizza reviews, knot tying, and much much more.</p>
 							<p>I am currently a Senior at Liberty University Online pursuing a Bachelor of Science in Computational Mathematics. I hope to apply the knowledge obtained from this degree towards the Data Science field. I have an estimated graduation date of March, 2023 and am interested in the idea of attending a Master’s in Data Science/Analytics program.</p>
 							<section><div id="first"></div><section>
 							<p>In April 2022, I was honorably discharged from the Marine Corps where I served as a Small Arms Repair Technician, or armorer, at MARSOC. In the Armory, my primary roles dealt with battallion level oversight of the maintenance performed by our armorers. A pretty common day in the armory would be spent analyzing preventative maintenance reports, collaborating with company armorers to ensure proper capture of inspections data, and reading the daily maintenance production report to see the current statuses of items inducted for repair. I am excited about the next chapter of my life, and I hope it goes by much slower than my 4 years in the Marines.</p>
@@ -60,14 +77,18 @@
 								<li><a href="#" class="button">Home</a></li>
 							</ul>
 						</div>
-						<div class="image">
-							<img src="images/Mountains.jpeg" alt="" />
+					</section>
+
+				<!-- Section Break -->
+					<section id=break class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed" opacity:.1 >
+						<div>
+							<br><br><br><br>
 						</div>
 					</section>
 
 				<!-- Resume -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed" opacity:.1>
+						<div id="pdiv" class="content">
 							<h2><a href="https://docs.google.com/document/d/13y664ucSNYDINdYBPvWSVQnjYG-HMPkR/edit?usp=sharing&ouid=100869024541654021320&rtpof=true&sd=true" target="_blank">Resume</a></h2>
 							<h3>Professional Summary</h3>
 							<p>Senior Computational Mathematics student with a current secret clearance seeking a role in data. Goal-oriented and personable, with a strong desire for learning new technologies.
@@ -110,25 +131,21 @@
 							</ul>
 
 							<ul class="actions stacked">
-								<li><a href="https://docs.google.com/document/d/1hTQ41feuGyg_wAEKk_7jTgB4RnzxF5RBv7XuBqBzf4Y/edit?usp=sharing"
-									target="_blank" class="button"><span class="label">Cover Letter</span></a></li>
+								<h3><a href="https://docs.google.com/document/d/1hTQ41feuGyg_wAEKk_7jTgB4RnzxF5RBv7XuBqBzf4Y/edit?usp=sharing"
+									target="_blank">View Infosys Cover Letter</a></h3>
 								<li><a href="#" class="button"><span class="label">Home</span></a></li>
 							</ul>
 						</div>
-						<div class="image">
-							<img src="images/starsnight.jpeg" alt="" />
-						</div>
 					</section>
-							
+
 				<!-- Certifications -->
-					<section class="wrapper style1 align-center">
+					<section class="wrapper style1 align-center"  style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed">
 						<div class="inner">
 							<h2>Certifications</h2>
 						</div>
-						<section><div id="certs"></div><section>
 
 						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
+							<div id="pdiv" class="gallery style2 medium lightbox onscroll-fade-in">
 								<article>
 									<a href="images/CertificateOfCompletion_Python for Data Science Essential Training Part 1-1.png" class="image">
 										<img src="images/CertificateOfCompletion_Python for Data Science Essential Training Part 1-1.png" background-color=#666666 alt="" />
@@ -146,7 +163,7 @@
 										<img src="images/CertificateOfCompletion_Data Ingestion with Python (1)-1.png" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Data Ingestion with Python</h3>
+										<h3 id="certs">Data Ingestion with Python</h3>
 										<p>LinkedIn Learning</p>
 										<ul class="actions fixed">
 											<li><span class="button small">View</span></li>
@@ -193,36 +210,24 @@
 
 					</section>
 
+				<!-- Section Break -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed" opacity:.1 >
+						<div>
+							<br><br><br><br><br>
+						</div>
+					</section>
+
 				<!-- Projects -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
+					<section class="wrapper style1 align-center"   style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed" opacity:.1>
+						<div id="pdiv" class="inner">
 							<h2>Projects</h2>
+							<section><div id="projects"></div><section>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
-									<span>Using Oracle Live SQL to answer 3 business questions about a sales history database.</span>
-									<video width="250px" height="180pxx" src="/images/SQLsh.mp4" type=video/mp4 controls>
+									<video width="300px" height="225px" src="images/SQLsh.mp4" type=video/mp4 controls>
 									Your browser does not support the video tag.
 									</video>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Python</h3>
-									<p id="projects">Place project here.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-braille"></span>
-									<h3>Tableau</h3>
-									<p>Place project here.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sitemap"></span>
-									<h3>SQL</h3>
-									<p>Place project here.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Python</h3>
-									<p>Place project here.</p>
+									<span>Using Oracle Live SQL to answer 3 business questions about a sales history database.</span>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-braille"></span>
@@ -232,9 +237,10 @@
 							</div>
 						</div>
 					</section>
+
 					<!-- Papers -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="third">
-						<div class="content">
+					<section class="spotlight style2 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed" opacity:.1>
+						<div id="pdiv" class="content">
 							<h2>Papers</h2>
 							<span>Personal</span>
 							<li><a href="https://docs.google.com/document/d/1SixyXjp4SuNXG1Q8P0OLkg-aUpj4RxBZRzw-jW7C3tA/edit?usp=sharing" target="_blank">Core Values</a></li>
@@ -258,14 +264,18 @@
 								<li><a href="#" class="button">Home</a></li>
 							</ul>
 						</div>
-						<div class="image">
-							<img src="images/MossLog.jpeg" alt="" />
+					</section>
+
+				<!-- Section Break -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed" opacity:.1 >
+						<div>
+							<br><br><br><br>
 						</div>
 					</section>
 
 				<!-- Seven -->
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
+				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed" opacity:.1 >
+						<div id=cdiv class="content">
 							<h2>Contact Me</h2>
 							<form action="https://formspree.io/f/xgedjqbj" method="POST">
 								<div class="fields">
@@ -291,10 +301,19 @@
 						</div>
 					</section>
 
+			</div>
+
 				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
+					<footer class="wrapper style1 align-center"	style="background-image: url('images/road2.png'); background-size: cover; background-attachment: fixed">
 						<div class="inner">
-							<p>&copy; Untitled. Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
+							<span>Griffin McKnight, </span>
+							<span>Durham, North Carolina</span>
+							<p>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>. 2022</p>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/lgriffinmcknight" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/gmcknigh" target="_blank" class='icon brands style2 fa-github'><span class="label">GitHub</span></a></li>
+								<li><a href="mailto:griffin.mck@gmail.com" target="_blank" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
 						</div>
 					</footer>
 
