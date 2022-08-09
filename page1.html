@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Robinhood Portfolio Insights</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		#pdiv {
+			border: none;
+			background-color: white;
+			padding-top: 50px;
+			padding-right: 50px;
+			padding-bottom: 50px;
+			padding-left: 50px;
+		}
+		#cdiv {
+			background-color: white;
+		}
+		#break {
+			border: none:
+			background-color: white;
+		}
+		.btn {
+		  background-color: white;
+			border: black;
+		  color: white;
+		  font-size: 10px;
+		  cursor: pointer;
+			position: fixed;
+			z-index: 999;
+			display: inline-block;
+			text-decoration: none !important;
+		}
+		.btn:hover {
+		  background-color: #69696905;
+		}
+		header {
+			position: fixed;
+			padding-left: 15px;
+			padding-top: 15px;
+			z-index: 999;
+		}
+		</style>
+	</head>
+
+	<header>
+				<a href="#home1" class="btn button big smooth-scroll-middle" style="background-color:transparent;">Top</a>
+	</header>
+
+
+	<body>
+
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- Home -->
+					<section class="banner style3 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"  style="background-image: url('page1_files/background.jpeg'); background-size: cover; background-attachment: fixed">
+						<div class="content">
+							<h2>Robinhood Portfolio Insights</h2>
+							<p class="major">Analyzing ETF holdings</p>
+							<ul class="actions stacked">
+								<li><a href="#about" class="button big wide smooth-scroll-middle">Read Me</a></li>
+								<section><div id="home1"></div><section>
+								<li><a href="#python" class="button big wide smooth-scroll-middle">Python</a></li>
+								<section><div></div><section>
+								<li><a href="#sheets" class="button big wide smooth-scroll-middle">Sheets</a></li>
+								<section><div></div><section>
+								<li><a href="#tableau" class="button big wide smooth-scroll-middle">Tableau</a></li>
+								<section><div></div><section>
+								<li><a href="https://gmcknigh.github.io" class="button big wide smooth-scroll-middle">Home</a></li>
+
+						</div>
+						<div class="image">
+							<img src="page1_files/headerimg.jpeg" alt=""/>
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('page1_files/background.jpeg'); background-size: cover; background-attachment: fixed" opacity:.1>
+						<div id="pdiv" class="content">
+							<h2>Read Me</h2>
+							<h3>What is Robinhood?</h3>
+							<p>Robinhood is a desktop and mobile trading platform for the everyday person to invest in stocks, exchange-traded funds, cryptocurrency, and more, all commission free. When <a href="https://en.wikipedia.org/wiki/Robinhood_Markets">Robinhood Markets, Inc.</a> was founded in 2013,  it set out to make a platform for the modern day investor to make commission free trades, day after day. Robinhood has become incredibly popular and has over 15 million people using it as their 		primary trading platform (2022).<br><br>
+								I use Robinhood as a platform to invest in exchange-traded funds (ETFs) for an easy way to diversify my portfolio while directing my investments towards are particular sector or group of companies. Read more about ETFs on Investopedia.com <a href="https://www.investopedia.com/terms/e/etf.asp#:~:text=An%20exchange%2Dtraded%20fund%20(ETF)%20is%20a%20type%20of,that%20a%20regular%20stock%20can.">here</a>.
+							</p>
+							<h3>What's lacking?</h3>
+							<p>
+								Robinhood’s platform has always <a id="about"></a>been very sleek and user-friendly. However, there is a problem for user’s that are primarily invested in ETFs. The banner <a href="#">image</a> at the top of this page shows what is supposed to be high-level insight into a user’s portfolio. The problem is, if you’ve sought out to use Robinhood to solely invest in ETFs, you already know that your profiles investments are 100% distributed in them. What could be a very useful pie chart, is lacking key information for the account.
+							</p>
+							<h3>Project Description</h3>
+							<p>Using the robin_stocks module and an encrypted file with login information, a user's Robinhood account can be accessed inside of the Notebook. If the login.txt file is encrypted at the time of use, or the incorrect path is specified, a picture is taken through the webcam and saved with the timestamp and file path attempted as the file name. Once accessed, the portfolio's ETF tickers are put into various webscraping functions. The first function scrapes the sector breakdown data for each ETF and writes that information into a dictionary, where it is then converted into a Pandas Dataframe. The second webscraping function retrieves each ETF's top stock holdings and calculates the percentage of the whole portfolio that each stock takes up. By calculating the true percentage prior to dictionary assignment, if the same stocks are found again, their percentage totals are able to be accurately added together. Once these calculations are made, the data is stored into a dictionary, and once again converted into a DataFrame. Now that there is a list of the top N stocks 'held' in the portfolio, each stock needs to be assigned a sector so that the sector and stock data can be joined. There is a fourth working function that is not currently in use: it uses the InvestPy module to compile a 10 year market history for each stock in the top stocks list. The InvestPy module was not consistantly retrieving the stock data and the function needs more work to make it dependable. After all of this data has been stored as DataFrames, it is written to a Google Sheet via the Google Sheet API, an API key, and sheet information. This sheet serves as the live server for the Tableau Dashboard. Lastly, in Tableau, the sector breakdown of the ETF portfolio and top holdings of the ETFs can be seen. After the InvestPy function is improved, a Tableau Dash providing 10 year market history data for each ETF and holdings can be added.
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('page1_files/background.jpeg'); background-size: cover; background-attachment: fixed" opacity:.1 >
+						<div>
+							<br><br><br><br>
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('page1_files/background.jpeg'); background-size: cover; background-attachment: fixed" opacity:.1>
+						<div id="pdiv" class="content">
+							<h2 >Jupyter Notebook</h2>
+							<iframe
+								id="python"
+							  src="page1_files/etf_portfolio_insights.html"
+							  width="100%"
+							  height="600px">
+							</iframe>
+							<a href="https://gmcknigh.github.io/notebooks/lab?path=projects%2FRobinhood+Portfolio+Insights%2Fetf_portfolio_insights.ipynb" target="robin" class="icon solid style1 fa-book-open"><span class="label">Go to JupyterLab</span> View/Edit JupyterLite</a>
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('page1_files/background.jpeg'); background-size: cover; background-attachment: fixed" opacity:.1 >
+						<div>
+							<br><br><br><br>
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('page1_files/background.jpeg'); background-size: cover; background-attachment: fixed" opacity:.1>
+						<div id="pdiv" class="content">
+							<h2>Google Sheets</h2>
+							<iframe id="sheets" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlU8BxebFz66CvGI5Buhi3FDrO7viT7Q0J0TFGOTclgagpSOXWkTb-tfzq8nzC0vvdNj4X76L8ZCkl/pubhtml?widget=true&amp;headers=false" style="width:100%; height:600px"></iframe>
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('page1_files/background.jpeg'); background-size: cover; background-attachment: fixed" opacity:.1 >
+						<div>
+							<br><br><br><br>
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-image: url('page1_files/background.jpeg'); background-size: cover; background-attachment: fixed" opacity:.1>
+						<div id="pdiv" class="content">
+							<h2>Tableau</h2>
+							<a id="tableau"/>
+							<div class='tableauPlaceholder' id='viz1660003454924' style="position: relative; height:600px;"><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ET&#47;ETFPortfolioDash&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ETFPortfolioDash&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ET&#47;ETFPortfolioDash&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1660003454924');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+						</div>
+					</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="asssets/js/copyurl.js"></script>
