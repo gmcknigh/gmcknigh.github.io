@@ -1,1 +1,1 @@
-This portfolio was made using HTML5 UP under a Creative Commons License.
+This portfolio contains my resume, certifications, and projects related to all things data.
