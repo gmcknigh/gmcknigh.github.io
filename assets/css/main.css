@@ -16,7 +16,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+footer, header, hgroup, menu, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -26,7 +26,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, section {
 	display: block;}
 
 body {
@@ -173,7 +173,7 @@ input, select, textarea {
 
 		a:hover {
 			text-decoration: none;
-			color: #05fcf8;
+			color: #E6B76E;
 		}
 
 	strong, b {
@@ -325,7 +325,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #05fcf8;
+			color: #fffff;
 		}
 
 	strong, b {
@@ -2197,8 +2197,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #05fcf8;
-			color: #05fcf8 !important;
+			box-shadow: inset 0 0 0 1px #ffffff;
+			color: #ffffff !important;
 		}
 
 		input[type="submit"]:active,
@@ -2226,7 +2226,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #05fcf8;
+				background-color: #ffffff;
 			}
 
 			input[type="submit"].primary:active,
@@ -2497,8 +2497,8 @@ input, select, textarea {
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #05fcf8;
-			box-shadow: 0 0 0 1px #05fcf8;
+			border-color: #ffffff;
+			box-shadow: 0 0 0 1px #ffffff;
 		}
 
 	select {
@@ -2612,12 +2612,12 @@ input, select, textarea {
 	}
 
 	.icon.style2:before {
-		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+		box-shadow: inset 0 0 0 1px #E6B76E;
 	}
 
 	a.icon.style2:hover:before {
-		box-shadow: inset 0 0 0 1px #05fcf8;
-		color: #05fcf8;
+		box-shadow: inset 0 0 0 1px #ffffff;
+		color: #ffffff;
 	}
 
 	a.icon.style2:active:before {
@@ -6454,7 +6454,7 @@ input, select, textarea {
 				.gallery.style1 input[type="button"].primary:hover,
 				.gallery.style1 button.primary:hover,
 				.gallery.style1 .button.primary:hover {
-					background-color: #05fcf8;
+					background-color: #ffffff;
 				}
 
 				.gallery.style1 input[type="submit"].primary:active,
@@ -6690,23 +6690,21 @@ input, select, textarea {
 /* Gallery (style2) */
 
 	.gallery.style2 {
-		background-color: #000000;
-		color: #ffffff;
+		background-color: rgba(0,0,0,.5);
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
 		-webkit-overflow-scrolling: touch;
 		position: relative;
-		background-color: transparent;
 	}
 
 		.gallery.style2 input, .gallery.style2 select, .gallery.style2 textarea {
-			color: #ffffff;
+			color: #rgba(0,0,0,1);
 		}
 
 		.gallery.style2 a {
-			color: #ffffff;
+			color: #rgba(0,0,0,0);
 		}
 
 			.gallery.style2 a:hover {
@@ -6714,7 +6712,7 @@ input, select, textarea {
 			}
 
 		.gallery.style2 strong, .gallery.style2 b {
-			color: #ffffff;
+			color: #rgba(0,0,0,0);
 		}
 
 		.gallery.style2 h1, .gallery.style2 h2, .gallery.style2 h3, .gallery.style2 h4, .gallery.style2 h5, .gallery.style2 h6 {
@@ -6726,7 +6724,7 @@ input, select, textarea {
 		}
 
 		.gallery.style2 code {
-			background: rgba(255, 255, 255, 0.125);
+			background: rgba(0,0,0,0);
 			border-color: white;
 		}
 
@@ -6749,8 +6747,8 @@ input, select, textarea {
 			.gallery.style2 input[type="button"]:hover,
 			.gallery.style2 button:hover,
 			.gallery.style2 .button:hover {
-				box-shadow: inset 0 0 0 1px #05fcf8;
-				color: #05fcf8 !important;
+				box-shadow: inset 0 0 0 1px #ffffff;
+				color: #ffffff !important;
 			}
 
 			.gallery.style2 input[type="submit"]:active,
@@ -6768,7 +6766,7 @@ input, select, textarea {
 			.gallery.style2 input[type="button"].primary,
 			.gallery.style2 button.primary,
 			.gallery.style2 .button.primary {
-				background-color: #ffffff;
+				background-color: #rgba(0,0,0,0);
 				box-shadow: none;
 				color: #000000 !important;
 			}
@@ -6915,7 +6913,7 @@ input, select, textarea {
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background-color: rgba(0, 0, 0, 0.5);
+				background-color: rgba(0, 0, 0, .5);
 				opacity: 0;
 				padding: 3rem;
 				z-index: 1;
@@ -8251,6 +8249,7 @@ input, select, textarea {
 		border-top-color: rgba(0, 0, 0, 0.2);
 	}
 
+
 /* Wrapper */
 
 	#wrapper {
@@ -8605,3 +8604,86 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+		.topnav {
+			width: 100%;
+			float: left;
+			top: 0;
+			position: fixed;
+			z-index: 999;
+			background-color: #212121;
+		  color: #E6B76E;
+		  text-align: center;
+			align-self: center;
+			border: 0;
+			cursor: pointer;
+			display: inline-block;
+			font-weight: 400;
+			letter-spacing: 0.125em;
+			text-decoration: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+			font-size: 0.75rem;
+			height: 2.75em;
+			line-height: 2.75em;
+			padding: 0em .5em;
+			box-shadow: 0 0 10px 0;
+		}
+				/* Style the links inside the navigation bar */
+		.topnav a {
+		  float: left;
+		  color: #E6B76E;
+		  text-align: center;
+			align-self: center;
+			border: 0;
+			cursor: pointer;
+			display: inline-block;
+			font-weight: 400;
+			letter-spacing: 0.125em;
+			text-decoration: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+			font-size: 0.75rem;
+			height: 2.75em;
+			line-height: 2.75em;
+			padding: 0em .5em;
+			text-overflow: ellipsis;
+		}
+
+		/* Change the color of links on hover */
+		.topnav a:hover {
+		  color: white;
+		}
+
+
+		// Collapse nav bar on scroll down
+		.collapse {
+		  animation: collapse .5s ease forwards;
+		}
+
+		// Open nav bar on scroll up
+		.open {
+		  animation: open .5s ease forwards;
+		}
+
+		@keyframes collapse {
+		  from {
+		    opacity: 1;
+				top: 0;
+		  }
+		  to {
+		    opacity: 0;
+		    top: -$navBar-height;
+		  }
+		}
+
+		@keyframes open {
+		  from {
+		    opacity: 0;
+		    top: -$navBar-height;
+		  }
+		  to {
+		    opacity: 1;
+		  	top: 0;
+			}
+		}
